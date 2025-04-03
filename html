@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Colorizer</title>
+  <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="container">
+      <header>
+        <nav class="navbar">
+          <a href="#" class="nav-logo">
+            <h2 class="logo-text">🔮 Image Colorizer</h2>
+          </a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+   </div>
+   
+   <main>
+      <div class="upload-area">  
+         <h1>Image Colorizer</h1>
+         <p>Upload a black and white image to colorize it</p>
+         <div class="img-area">
+            <h3>Upload image</h3>
+            <!-- Label wrapping the icon to trigger the file input -->
+            <label for="imageUpload" class="upload-icon">
+              <i class='bx bx-upload'></i>
+            </label>
+            <input type="file" id="imageUpload" accept="image/*">
+         </div>
+      </div>
+      
+      <!-- Colorize Button -->
+      <div class="button-container">
+        <button id="colorizeButton">
+          <p>Colorize</p>
+        </button>
+      </div>
+
+      <!-- Result Section -->
+      <section class="result-section" id="resultSection" style="display:none;">
+        <h3>Colorized Image</h3>
+        <img id="colorizedImage" alt="Colorized Image" style="max-width: 100%; height: auto;">
+      </section>
+   </main>
+
+   <footer>
+      <p>Designed by: Bedjaoui Fatma Zahra</p>
+      <p>Powered by: AI (GAN architecture)</p>
+      <p>Contact us:
+        <a href="mailto:simpleimagecolorization@gmail.com">simpleimagecolorization@gmail.com</a>
+      </p>
+   </footer>
+</body>
+</html>
