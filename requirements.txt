@@ -1,0 +1,4 @@
+flask==2.0.1
+opencv-python==4.5.5.64
+numpy==1.21.2
+werkzeug==2.0.1
