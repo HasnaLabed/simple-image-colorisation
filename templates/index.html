@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" herf="{{url_for('static',filename='style.css')}}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Colorizer</title>
+  <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+   <div class="container">
+      <header>
+        <nav class="navbar">
+          <a href="#" class="nav-logo">
+            <img src="/static/images/rokLogo.png" alt="logo" class="navbar-logo-img">
+          </a>
+          <h2 class="logo-text">COLOR IT</h2>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+   </div>
+   
+   <main>
+      <div class="upload-area">  
+         <h1>Image Colorizer</h1>
+         <p>Upload a black and white image to colorize it</p>
+         <div class="img-area">
+            <h3>Upload image</h3>
+            <label for="imageUpload" class="upload-icon">
+              <i class='bx bx-upload'></i>
+            </label>
+            <input type="file" id="imageUpload" accept="image/*">
+            <div id="previewContainer">
+              <img id="imagePreview" src="#" alt="Preview" style="display:none; max-width: 100%;">
+            </div>
+         </div>
+      </div>
+      
+      <div class="button-container">
+        <button id="colorizeButton" disabled>
+          <p>Colorize</p>
+        </button>
+      </div>
 
+      <section class="result-section" id="resultSection" style="display:none;">
+        <div class="image-comparison">
+          <div class="image-container">
+            <h3>Original</h3>
+            <img id="originalImage" alt="Original Image">
+          </div>
+          <div class="image-container">
+            <h3>Colorized</h3>
+            <img id="colorizedImage" alt="Colorized Image">
+          </div>
+        </div>
+      </section>
+      
+      <div id="loadingSpinner" style="display:none;">
+        <div class="spinner"></div>
+        <p>Processing your image...</p>
+      </div>
+   </main>
+
+   <footer>
+      <p>Powered by: AI (GAN architecture)</p>
+      <p>Contact us:
+        <a href="mailto:simpleimagecolorization@gmail.com">simpleimagecolorization@gmail.com</a>
+      </p>
+   </footer>
+
+   <script src="/static/js/script.js"></script>
+</body>
+</html>
